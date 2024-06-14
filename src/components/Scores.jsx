@@ -30,8 +30,12 @@ function Score() {
               <td>{data.map(()=>{
                     {firstName}
                 })} </td>
-                <td>Last name 1 </td>
-                <td>55</td>
+                <td>{data.map(()=>{
+                    {lastName}
+                })} </td>
+                <td>{data.map(()=>{
+                    {score}
+                })}</td>
               </tr>
               <tr>
                 <td>First name 2 </td>
