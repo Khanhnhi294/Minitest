@@ -1,40 +1,15 @@
 import pn_logo from "./assets/pn_logo.png";
-
+import Header from "./components/Header";
+import Score from "./components/Scores";
 function App() {
   return (
     <>
-      <header id="header">
-        <img src={pn_logo} alt="PN Logo" />
-        <h1>Students results for (fake batch name))</h1>
-      </header>
-
-      <main className="scores-container">
-        <div class="scores">
-          <h1>Fake Course</h1>
-
-          <table>
-            <thead>
-              <tr>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>First name 1 </td>
-                <td>Last name 1 </td>
-                <td>55</td>
-              </tr>
-              <tr>
-                <td>First name 2 </td>
-                <td>Last name 2 </td>
-                <td>45</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </main>
+    <Header/>
+    <Scores courseName="HTML" courseResults={HTML_RESULTS}> </Scores>
+    <Scores courseName="JAVA" courseResults={JAVA_RESULTS}> </Scores>
+    <Scores courseName="PYTHON" courseResults={PYTHON_RESULTS}> </Scores>
+    <Scores courseName="ENGLISH" courseResults={ENGLISH_RESULTS}> </Scores>
+     
     </>
   );
 }
